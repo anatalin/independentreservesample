@@ -1,0 +1,16 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Average number of trades per minute: @Model.TradesInfoViewModel.AvgNumberTradesPerMinute</p>
+    <p>Average volume of trades per minute: @Model.TradesInfoViewModel.AvgTradeVolumePerMinute</p>
+</div>
+<div style="text-align: center">
+    Click 
+    <button class="btn btn-primary" onclick="location.reload()">here</button>
+    to get actual numbers
+</div>
