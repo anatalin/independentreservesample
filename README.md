@@ -28,6 +28,7 @@ Note: separate Dockerfile for unit tests project allows to parallelize building 
 - more unit tests: 
 	- on Index.cshtml.cs
 	- on IndependentReserveClient (mock external APIs somehow)
+	- on TradesRepository
 - extract business login from Index.cshtml.cs into separate service and cover it with unit tests
 - UI: new API returning JSON with average trades info + polling this API from UI for faster refresh
 - or send updated trades info to UI using SignalR
