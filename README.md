@@ -13,6 +13,11 @@ docker run -p 5016:8080 independentreservesample
 
 Then open http://localhost:5016.
 
+If you'd like to run it locally through console/IDE, then you should create the DB first.
+```shell
+dotnet ef database update --project ./Common --startup-project ./Web --verbose
+```
+
 ## How to run unit tests
 ```shell
 docker build -f .\Tests\Dockerfile -t independentreservesample_test .
